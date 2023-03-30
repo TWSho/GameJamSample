@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
     "com.unity.collab-proxy": "2.0.1",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.18",
@@ -10,6 +12,9 @@
     "com.unity.timeline": "1.6.4",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.8.0",
+    "jp.co.tis.extreal.core.common": "https://github.com/extreal-dev/Extreal.Core.Common.git",
+    "jp.co.tis.extreal.core.logging": "https://github.com/extreal-dev/Extreal.Core.Logging.git",
+    "jp.co.tis.extreal.core.stagenavigation": "https://github.com/extreal-dev/Extreal.Core.StageNavigation.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

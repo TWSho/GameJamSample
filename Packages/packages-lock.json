@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "73d86259ce31ce7f4dfe1d028ea1c3edf96c23e4"
+    },
+    "com.neuecc.unirx": {
+      "version": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "284d5c50d3f1ddd9fa7df3d382ea904732a9c2ff"
+    },
     "com.unity.collab-proxy": {
       "version": "2.0.1",
       "depth": 0,
@@ -134,6 +148,36 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "jp.co.tis.extreal.core.common": {
+      "version": "https://github.com/extreal-dev/Extreal.Core.Common.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "jp.co.tis.extreal.core.logging": "1.1.0",
+        "com.cysharp.unitask": "2.3.3",
+        "com.neuecc.unirx": "7.1.0"
+      },
+      "hash": "2b59230e73c1297f064bbb466ecbc7c4f9f493a1"
+    },
+    "jp.co.tis.extreal.core.logging": {
+      "version": "https://github.com/extreal-dev/Extreal.Core.Logging.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b45f452365e2b2111c30a767a47b6c3c339d2fc5"
+    },
+    "jp.co.tis.extreal.core.stagenavigation": {
+      "version": "https://github.com/extreal-dev/Extreal.Core.StageNavigation.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "jp.co.tis.extreal.core.logging": "1.1.0",
+        "jp.co.tis.extreal.core.common": "1.0.0",
+        "com.cysharp.unitask": "2.3.3",
+        "com.neuecc.unirx": "7.1.0"
+      },
+      "hash": "594229fd4ceda1e3547b154205e37ecc92150082"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
