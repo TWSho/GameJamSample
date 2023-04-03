@@ -64,6 +64,10 @@
     <Compile Include="Assets\GameJam\APP\StageConfig.cs" />
     <Compile Include="Assets\GameJam\TitleScreen\TitleScreenView.cs" />
     <Compile Include="Assets\GameJam\TitleScreen\TitleScreenScope.cs" />
+    <Compile Include="Assets\GameJam\MainScreen\MainScreenScope.cs" />
+    <Compile Include="Assets\GameJam\MainScreen\MainScreenPresenter.cs" />
+    <Compile Include="Assets\GameJam\MainScreen\MainScreenView.cs" />
+    <Compile Include="Assets\GameJam\MainScreen\CubeRotation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GameJam\GameJam.asmdef" />
