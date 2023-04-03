@@ -1,5 +1,6 @@
 ﻿Logs/
 Library/
 Temp/
+.vs/
 .vsconfig
 GameJamSample.sln

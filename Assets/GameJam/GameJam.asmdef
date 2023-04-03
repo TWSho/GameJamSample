@@ -1,0 +1,22 @@
+{
+    "name": "GameJam",
+    "rootNamespace": "GameJam",
+    "references": [
+        "Extreal.Core.Logging",
+        "Extreal.Core.Common",
+        "Extreal.Core.StageNavigation",
+        "UniRx",
+        "UniTask",
+        "VContainer",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

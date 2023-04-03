@@ -15,6 +15,7 @@
     "jp.co.tis.extreal.core.common": "https://github.com/extreal-dev/Extreal.Core.Common.git",
     "jp.co.tis.extreal.core.logging": "https://github.com/extreal-dev/Extreal.Core.Logging.git",
     "jp.co.tis.extreal.core.stagenavigation": "https://github.com/extreal-dev/Extreal.Core.StageNavigation.git",
+    "jp.hadashikick.vcontainer": "1.13.1",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -46,5 +47,16 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "OpenUPM",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "jp.hadashikick",
+        "com.cysharp",
+        "com.neuecc"
+      ]
+    }
+  ]
 }

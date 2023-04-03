@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/GameJam/APP/APP.unity
+    guid: b42771a93a1e6d1408cbdf7e32d44de6
+  - enabled: 1
+    path: Assets/GameJam/TitleScreen/TitleScreen.unity
+    guid: debf56bb835e3c9438b3c9b0c675fb09
+  - enabled: 1
+    path: Assets/GameJam/MainScreen/MainScreen.unity
+    guid: 439fe87c3fa0eba4690776266936471f
   m_configObjects: {}
