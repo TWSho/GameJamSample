@@ -24,9 +24,9 @@ namespace GameJam.MainScreen
 
         public void Initialize()
         {
-            mainScreenView.OnGoButtonClicked.Subscribe(_ =>
+            mainScreenView.OnNextButtonClicked.Subscribe(_ =>
             {
-                stageNavigator.ReplaceAsync(StageName.MainStage).Forget();
+                stageNavigator.ReplaceAsync(StageName.ScoreStage).Forget();
             }).AddTo(compositeDisposable);
         }
 

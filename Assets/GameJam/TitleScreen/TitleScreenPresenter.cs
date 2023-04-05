@@ -24,7 +24,7 @@ namespace GameJam.TitleScreen
 
         public void Initialize()
         {
-            titleScreenView.OnGoButtonClicked.Subscribe(_ =>
+            titleScreenView.OnNextButtonClicked.Subscribe(_ =>
             {
                 stageNavigator.ReplaceAsync(StageName.MainStage).Forget();
             }).AddTo(compositeDisposable);

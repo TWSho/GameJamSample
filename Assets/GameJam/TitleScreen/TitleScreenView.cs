@@ -7,9 +7,9 @@ namespace GameJam.TitleScreen
 {
     public class TitleScreenView : MonoBehaviour
     {
-        [SerializeField] private Button startButton;
+        [SerializeField] private Button nextButton;
 
-        public IObservable<Unit> OnGoButtonClicked
-            => startButton.OnClickAsObservable().TakeUntilDestroy(this);
+        public IObservable<Unit> OnNextButtonClicked
+            => nextButton.OnClickAsObservable().TakeUntilDestroy(this);
     }
 }
