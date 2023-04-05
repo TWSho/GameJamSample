@@ -18,3 +18,5 @@ MonoBehaviour:
     sceneNames: 64000000
   - stageName: 1
     sceneNames: c8000000
+  - stageName: 2
+    sceneNames: 2c010000

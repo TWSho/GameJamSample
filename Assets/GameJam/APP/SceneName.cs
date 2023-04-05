@@ -8,5 +8,6 @@ namespace GameJam
     {
         TitleScreen = 100,
         MainScreen = 200,
+        ScoreScreen = 300,
     }
 }

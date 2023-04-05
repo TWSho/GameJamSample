@@ -68,6 +68,9 @@
     <Compile Include="Assets\GameJam\MainScreen\MainScreenPresenter.cs" />
     <Compile Include="Assets\GameJam\MainScreen\MainScreenView.cs" />
     <Compile Include="Assets\GameJam\MainScreen\CubeRotation.cs" />
+    <Compile Include="Assets\GameJam\ScoreScreen\ScoreScreenPresenter.cs" />
+    <Compile Include="Assets\GameJam\ScoreScreen\ScoreScreenScope.cs" />
+    <Compile Include="Assets\GameJam\ScoreScreen\ScoreScreenView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GameJam\GameJam.asmdef" />
