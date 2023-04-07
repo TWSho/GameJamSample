@@ -291,6 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 50
+  Rotate: 0
 --- !u!65 &159199671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -538,6 +539,7 @@ MonoBehaviour:
   autoRun: 1
   autoInjectGameObjects: []
   mainScreenView: {fileID: 1016182861}
+  cubeRotation: {fileID: 159199670}
 --- !u!4 &588164926
 Transform:
   m_ObjectHideFlags: 0

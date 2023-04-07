@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class CubeRotation : MonoBehaviour
 {
-    public float rotationSpeed = 50f; // ‰ñ“]‘¬“x
-
-    // –ˆƒtƒŒ[ƒ€ŒÄ‚Î‚ê‚éŠÖ”
+    [SerializeField] float rotationSpeed = 50f; // ‰ñ“]‘¬“x
+    public float Rotate;
     void Update()
     {
         // Y²ü‚è‚É‰ñ“]‚·‚é
         transform.Rotate(0f, rotationSpeed * Time.deltaTime, 0f);
+        Rotate = transform.rotation.y;
     }
 }

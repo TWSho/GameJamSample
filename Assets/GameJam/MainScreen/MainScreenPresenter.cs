@@ -13,19 +13,28 @@ namespace GameJam.MainScreen
 
         private MainScreenView mainScreenView;
 
+        private ScoreData scoreData;
+
+        private CubeRotation cubeRotation;
+
         private CompositeDisposable compositeDisposable = new CompositeDisposable();
 
         public MainScreenPresenter(StageNavigator<StageName, SceneName> stageNavigator,
-            MainScreenView mainScreenView)
+            MainScreenView mainScreenView,
+            ScoreData scoreData,
+            CubeRotation cubeRotation)
         {
             this.stageNavigator = stageNavigator;
             this.mainScreenView = mainScreenView;
+            this.scoreData= scoreData;
+            this.cubeRotation = cubeRotation;
         }
 
         public void Initialize()
         {
             mainScreenView.OnNextButtonClicked.Subscribe(_ =>
             {
+                scoreData.scoreInt.Value = (int)(cubeRotation.Rotate * 100f);    // 適当にScoreを入れる
                 stageNavigator.ReplaceAsync(StageName.ScoreStage).Forget();
             }).AddTo(compositeDisposable);
         }
