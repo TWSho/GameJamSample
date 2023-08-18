@@ -16,17 +16,17 @@ namespace GameJam.ScoreScreen
 
         private ScoreScreenView scoreScreenView;
 
-        private ScoreData scoreData;
+        private AppState appState;
 
         private CompositeDisposable compositeDisposable = new CompositeDisposable();
 
         public ScoreScreenPresenter(StageNavigator<StageName, SceneName> stageNavigator,
             ScoreScreenView scoreScreenView,
-            ScoreData scoreData)
+            AppState appState)
         {
             this.stageNavigator = stageNavigator;
             this.scoreScreenView = scoreScreenView;
-            this.scoreData= scoreData;
+            this.appState = appState;
         }
 
         public void Initialize()
@@ -36,14 +36,11 @@ namespace GameJam.ScoreScreen
                 stageNavigator.ReplaceAsync(StageName.TitleStage).Forget();
             }).AddTo(compositeDisposable);
 
-            scoreData.scoreInt.Subscribe(score =>
+            scoreScreenView.SetScoreDataText(appState.ScoreInt.ToString());
+            if (Logger.IsDebug())
             {
-                scoreScreenView.SetScoreDataText(score.ToString());
-                if (Logger.IsDebug())
-                {
-                    Logger.LogDebug($"Score : {score}");
-                }
-            }).AddTo(compositeDisposable);
+                Logger.LogDebug($"Score : {appState.ScoreInt}");
+            }
         }
 
         

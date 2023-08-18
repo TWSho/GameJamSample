@@ -13,7 +13,7 @@ namespace GameJam.MainScreen
 
         private MainScreenView mainScreenView;
 
-        private ScoreData scoreData;
+        private AppState appState;
 
         private CubeRotation cubeRotation;
 
@@ -21,12 +21,12 @@ namespace GameJam.MainScreen
 
         public MainScreenPresenter(StageNavigator<StageName, SceneName> stageNavigator,
             MainScreenView mainScreenView,
-            ScoreData scoreData,
+            AppState appState,
             CubeRotation cubeRotation)
         {
             this.stageNavigator = stageNavigator;
             this.mainScreenView = mainScreenView;
-            this.scoreData= scoreData;
+            this.appState = appState;
             this.cubeRotation = cubeRotation;
         }
 
@@ -34,7 +34,7 @@ namespace GameJam.MainScreen
         {
             mainScreenView.OnNextButtonClicked.Subscribe(_ =>
             {
-                scoreData.scoreInt.Value = (int)(cubeRotation.Rotate * 100f);    // 適当にScoreを入れる
+                appState.SetScoreInt((int)(cubeRotation.Rotate * 100f));    // 適当にScoreを入れる
                 stageNavigator.ReplaceAsync(StageName.ScoreStage).Forget();
             }).AddTo(compositeDisposable);
         }

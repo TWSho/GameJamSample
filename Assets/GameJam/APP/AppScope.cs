@@ -32,7 +32,7 @@ namespace GameJam.App
         {
             builder.RegisterComponent(stageConfig).AsImplementedInterfaces();
             builder.Register<StageNavigator<StageName, SceneName>>(Lifetime.Singleton);
-            builder.Register<ScoreData>(Lifetime.Singleton);
+            builder.Register<AppState>(Lifetime.Singleton);
 
             builder.RegisterEntryPoint<AppPresenter>();
         }
