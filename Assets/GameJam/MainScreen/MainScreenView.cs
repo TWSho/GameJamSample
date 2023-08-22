@@ -9,10 +9,13 @@ namespace GameJam.MainScreen
     {
         [SerializeField] private Button nextButton;
         [SerializeField] private Button retryButton;
+        [SerializeField] private Button returnButton;
 
         public IObservable<Unit> OnNextButtonClicked
             => nextButton.OnClickAsObservable().TakeUntilDestroy(this);
         public IObservable<Unit> OnRetryButtonClicked
             => retryButton.OnClickAsObservable().TakeUntilDestroy(this);
+        public IObservable<Unit> OnReturnButtonClicked
+            => returnButton.OnClickAsObservable().TakeUntilDestroy(this);
     }
 }

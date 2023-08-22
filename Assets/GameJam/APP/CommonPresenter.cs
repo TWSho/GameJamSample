@@ -25,14 +25,14 @@ namespace GameJam.App
             stageNavigator.OnStageTransitioning.Subscribe(stage =>
             {
                 appState.SetLastStage(appState.nowStage);
-                Debug.Log($"last Stage: {appState.nowStage}");
-
+                Debug.Log($"last Stage: {appState.lastStage}");
             }).AddTo(compositeDisposable);
+
             stageNavigator.OnStageTransitioned.Subscribe(stage =>
-           {
+            {
                appState.SetNowStage(stage);
                Debug.Log($"Now Stage: {appState.nowStage}");
-           }).AddTo(compositeDisposable);
+            }).AddTo(compositeDisposable);
         }
 
 
