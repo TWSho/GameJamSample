@@ -36,6 +36,7 @@ namespace GameJam.ScoreScreen
                 stageNavigator.ReplaceAsync(StageName.TitleStage).Forget();
             }).AddTo(compositeDisposable);
 
+            naichilab.RankingLoader.Instance.SendScoreAndShowRanking(appState.ScoreInt);
             scoreScreenView.SetScoreDataText(appState.ScoreInt.ToString());
             if (Logger.IsDebug())
             {
