@@ -4,6 +4,7 @@ using Extreal.Core.StageNavigation;
 using GameJam.App;
 using UniRx;
 using VContainer.Unity;
+using UnityEngine.SceneManagement;
 
 namespace GameJam.MainScreen
 {
@@ -36,6 +37,10 @@ namespace GameJam.MainScreen
             {
                 appState.SetScoreInt((int)(cubeRotation.Rotate * 100f));    // 適当にScoreを入れる
                 stageNavigator.ReplaceAsync(StageName.ScoreStage).Forget();
+            }).AddTo(compositeDisposable);
+            mainScreenView.OnRetryButtonClicked.Subscribe(_ =>
+            {
+                stageNavigator.ReplaceAsync(StageName.RetryStage).Forget();
             }).AddTo(compositeDisposable);
         }
 

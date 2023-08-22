@@ -6,8 +6,10 @@ namespace GameJam
 {
     public enum SceneName
     {
+        Common = 0,
         TitleScreen = 100,
         MainScreen = 200,
         ScoreScreen = 300,
+        RetryScreen = 999,
     }
 }

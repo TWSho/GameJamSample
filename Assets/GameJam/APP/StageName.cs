@@ -9,5 +9,6 @@ namespace GameJam
         TitleStage = 0,
         MainStage = 1,
         ScoreStage = 2,
+        RetryStage = 999,
     }
 }

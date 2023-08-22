@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/GameJam/APP/APP.unity
     guid: b42771a93a1e6d1408cbdf7e32d44de6
   - enabled: 1
+    path: Assets/GameJam/APP/Common.unity
+    guid: e58beb7a76447774685e85fdc25c967b
+  - enabled: 1
     path: Assets/GameJam/TitleScreen/TitleScreen.unity
     guid: debf56bb835e3c9438b3c9b0c675fb09
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameJam/ScoreScreen/ScoreScreen.unity
     guid: 26f2574b62b768d4da06ed991837bb7a
+  - enabled: 1
+    path: Assets/GameJam/RetryScreen/RetryScreen.unity
+    guid: 82c394858e14ad143ae7acc4c9b99be3
   m_configObjects: {}
